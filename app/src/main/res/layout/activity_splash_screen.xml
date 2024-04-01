@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/food_mania_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/AppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/imageLogo"
+        app:layout_constraintStart_toStartOf="@+id/imageLogo"
+        app:layout_constraintTop_toBottomOf="@+id/imageLogo"
+        tools:ignore="MissingConstraints"
+        android:text="@string/food_mania"
+        android:textSize="40sp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/yeonsung_regular"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/AppName"
+        app:layout_constraintStart_toStartOf="@+id/AppName"
+        app:layout_constraintTop_toBottomOf="@+id/AppName"
+        tools:ignore="MissingConstraints"
+        android:text="@string/admin_dashboard"
+
+        android:textColor="@color/textColor"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/yeonsung_regular"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

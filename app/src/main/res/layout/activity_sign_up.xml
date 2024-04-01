@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:id="@+id/signUpAppLogo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/signUpAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/glimmerg_glide_reg"
+        android:text="@string/app_name"
+        android:textColor="@color/textColor"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/signUpAppLogo"
+        app:layout_constraintStart_toStartOf="@+id/signUpAppLogo"
+        app:layout_constraintTop_toBottomOf="@+id/signUpAppLogo" />
+
+    <TextView
+        android:id="@+id/signInSalogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/loginSalogan"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/signUpAppName"
+        app:layout_constraintStart_toStartOf="@+id/signUpAppName"
+        app:layout_constraintTop_toBottomOf="@+id/signUpAppName" />
+
+    <TextView
+        android:id="@+id/signUpMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="@string/sign_up_here"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/signInSalogan"
+        app:layout_constraintStart_toStartOf="@+id/signInSalogan"
+        app:layout_constraintTop_toBottomOf="@+id/signInSalogan" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yeonsung_regular"
+        android:text="Choose Your Location"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/locationDropDown"
+        app:layout_constraintStart_toStartOf="@+id/locationDropDown" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/locationDropDown"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edit_text"
+        android:elevation="15dp"
+        android:outlineSpotShadowColor="@color/textColor"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:endIconDrawable="@drawable/downarrow"
+        app:endIconTint="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/signUpMsg">
+
+        <AutoCompleteTextView
+            android:id="@+id/listOfLoc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text"
+            android:fontFamily="@font/lato_regular"
+            android:inputType="none"
+            android:paddingBottom="11dp"
+            android:text="@string/choose_location" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edit_text"
+        android:elevation="5dp"
+        android:ems="17"
+        android:fontFamily="@font/lato_regular"
+        android:hint="Name Of Owner"
+        android:inputType="textPersonName"
+        android:outlineSpotShadowColor="@color/textColor"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/locationDropDown"
+        app:layout_constraintStart_toStartOf="@+id/locationDropDown"
+        app:layout_constraintTop_toBottomOf="@+id/locationDropDown" />
+
+    <EditText
+        android:id="@+id/restaurantName"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edit_text"
+        android:elevation="5dp"
+        android:ems="17"
+        android:fontFamily="@font/lato_regular"
+        android:hint="Name Of Resaurant"
+        android:inputType="textPersonName"
+        android:outlineSpotShadowColor="@color/textColor"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/userName"
+        app:layout_constraintStart_toStartOf="@+id/userName"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+    <EditText
+        android:id="@+id/emailOrPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edit_text"
+        android:elevation="5dp"
+        android:ems="17"
+        android:fontFamily="@font/lato_regular"
+        android:hint="Email Or Phone Number"
+        android:inputType="text"
+        android:outlineSpotShadowColor="@color/textColor"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/restaurantName"
+        app:layout_constraintStart_toStartOf="@+id/restaurantName"
+        app:layout_constraintTop_toBottomOf="@+id/restaurantName"
+        tools:ignore="RtlSymmetry" />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edit_text"
+        android:drawableRight="@drawable/seenpassword"
+        android:elevation="5dp"
+        android:ems="17"
+        android:fontFamily="@font/lato_regular"
+        android:hint="@string/hintPassword"
+        android:inputType="textPassword"
+        android:outlineSpotShadowColor="@color/textColor"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/emailOrPhone"
+        app:layout_constraintStart_toStartOf="@+id/emailOrPhone"
+        app:layout_constraintTop_toBottomOf="@+id/emailOrPhone" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signUpBtn"
+        android:layout_width="200dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/green_button_gradient"
+        android:elevation="5dp"
+        android:fontFamily="@font/lato_bold"
+        android:outlineSpotShadowColor="@color/textColor"
+        android:text="@string/sign_up"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+
+    <TextView
+        android:id="@+id/alreadyHaveAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/already_have_an_account"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/signUpBtn"
+        app:layout_constraintStart_toStartOf="@+id/signUpBtn"
+        app:layout_constraintTop_toBottomOf="@+id/signUpBtn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Chefs Of Food Mania</string>
+    <string name="food_mania">Food Mania</string>
+    <string name="admin_dashboard">Admin DashBoard</string>
+    <string name="loginSalogan">Just Let\'s go for the chow</string>
+    <string name="LoginMessage">LogIn to Admin Account</string>
+    <string name="hintForEmail">abc@email.com</string>
+    <string name="hintPassword">Password</string>
+    <string name="loginBtn">Login</string>
+    <string name="or">or</string>
+    <string name="continue_with">continue_with</string>
+    <string name="facebook">facebook</string>
+    <string name="google">Google</string>
+    <string name="don_t_have_account">Don\'t Have Account</string>
+    <string name="_continue_With">continue with</string>
+    <string name="already_have_an_account">Already Have An Account</string>
+    <string name="sign_uo">Sign Uo</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="signUpHint">abc@email.com</string>
+    <string name="sign_up_here">Sign Up Here</string>
+    <string name="choose_location">Choose Location</string>
+    <string name="foodmania">Food Mania</string>
+    <string name="add_menu">Add Menu</string>
+    <string name="create_new_user">Create New User</string>
+    <string name="short_description">Short Description</string>
+    <string name="add_ingredient">Add Ingredient</string>
+    <string name="add_description_n_n_n_n">Add Description\n\n\n\n</string>
+    <string name="default_web_client_id">AIzaSyD2181q3ciL1OqjxxylrDzzOenwF7pFnKs</string>
+</resources>
