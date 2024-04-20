@@ -9,13 +9,13 @@
 
     <ImageButton
         android:id="@+id/btnBack"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="16dp"
         android:background="#00f4f4f4"
         android:scaleType="centerCrop"
-        android:src="@drawable/left_arror"
+        android:src="@drawable/leftarrow"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -23,15 +23,19 @@
     <TextView
         android:id="@+id/editTextView"
         android:layout_width="wrap_content"
+        android:layout_marginTop="24dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/yeonsung_regular"
         android:text="Order Details"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBack"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnBack" />
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        app:layout_constraintTop_toTopOf="@+id/btnBack"
+        app:layout_constraintVertical_bias="1.0" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -46,7 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="24dp"
             android:layout_marginEnd="10dp"
             android:background="@drawable/profile_edit_text_shape"
             android:elevation="2dp"

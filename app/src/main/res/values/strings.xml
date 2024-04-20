@@ -26,4 +26,5 @@
     <string name="add_ingredient">Add Ingredient</string>
     <string name="add_description_n_n_n_n">Add Description\n\n\n\n</string>
     <string name="default_web_client_id">AIzaSyD2181q3ciL1OqjxxylrDzzOenwF7pFnKs</string>
+    <string name="address">123, ABC Street \nXYZ Nagar</string>
 </resources>

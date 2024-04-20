@@ -55,11 +55,7 @@ class SignUpActivity : AppCompatActivity() {
             }
         }
 
-        val listOfLocation = arrayOf("Patna", "Gaya", "Sasaram", "Mithla", "Siwan", "Mujafarpur")
-        val adapter = ArrayAdapter(this, simple_list_item_1, listOfLocation)
 
-        val autoCompleteTextView = binding.listOfLoc
-        autoCompleteTextView.setAdapter(adapter)
 
 
 
