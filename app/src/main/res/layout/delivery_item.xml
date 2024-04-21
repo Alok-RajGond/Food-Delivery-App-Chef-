@@ -83,7 +83,7 @@
                 android:background="@drawable/edit_text"
                 android:elevation="15dp"
                 android:outlineSpotShadowColor="@color/textColor"
-                app:cardBackgroundColor="@color/textColor"
+                app:cardBackgroundColor="#C84A4A"
                 app:cardCornerRadius="20dp"
                 android:layout_marginTop="8dp"
                 app:layout_constraintEnd_toEndOf="@+id/delivery"

@@ -9,12 +9,12 @@
     <ImageView
         android:id="@+id/imageLogo"
         android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:src="@drawable/food_mania_logo"
+        android:layout_height="150dp"
+        android:src="@drawable/foodmania"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="200dp"/>
 
     <TextView
         android:id="@+id/AppName"
@@ -26,6 +26,7 @@
         tools:ignore="MissingConstraints"
         android:text="@string/food_mania"
         android:textSize="40sp"
+        android:textColor="@color/textColor"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/yeonsung_regular"/>
 

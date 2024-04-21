@@ -12,7 +12,7 @@
         android:layout_margin="16dp"
         android:background="@drawable/tansparent_bg"
         android:scaleType="centerCrop"
-        android:src="@drawable/left_arror"
+        android:src="@drawable/leftarrow"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

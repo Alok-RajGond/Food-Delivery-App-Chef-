@@ -12,9 +12,8 @@
         android:layout_height="30dp"
         android:layout_margin="16dp"
         android:background="@drawable/tansparent_bg"
-        android:scaleType="centerCrop"
+        android:scaleType="fitCenter"
         android:src="@drawable/leftarrow"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
